@@ -1,22 +1,22 @@
-import React from 'react'
+import React from 'react';
 
 export default function Modal(props) {
   function handleToggleModal(e) {
     const modal = e.target.closest('[data-modal]')
     if (modal) {
-      modal.close()
+      modal.close();
     } else {
-      e.target.nextElementSibling.showModal()
+      e.target.nextElementSibling.showModal();
     }
-  }
+  };
   
   return (
     <>
-      <button data-open-modal onClick={handleToggleModal}>{props['btn-open-text']}</button>
+      <button data-open-modal onClick={handleToggleModal}>{props.btnOpenText}</button>
       <dialog data-modal>
-        <p>{props['modal-text']}</p>
-        <button data-close-modal onClick={handleToggleModal}>{props['btn-close-text']}</button>
+        <p>{props.modalText}</p>
+        <button data-close-modal onClick={handleToggleModal}>{props.btnCloseText}</button>
       </dialog>
     </>
-  )
-}
+  );
+};
