@@ -1,0 +1,30 @@
+dialog {
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 1.6rem;
+  max-width: 400px;
+  overflow: inherit;
+}
+
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.close:hover {
+  background-color: #444;
+}

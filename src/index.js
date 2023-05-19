@@ -5,7 +5,7 @@ import Modal from './Modal';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const modalText = 'Testing the modal window!';
 const btnOpenText = 'Open';
-const btnCloseText = 'Close';
+const btnCloseText = 'X';
 
 root.render(
   <React.StrictMode>
