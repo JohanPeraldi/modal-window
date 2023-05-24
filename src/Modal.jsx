@@ -5,9 +5,10 @@ import './Modal.css';
 export default function Modal({ btnOpenText, btnCloseText, modalText, actions }) {
   // The showModal function opens the modal and performs the actions
   // passed as props, such as handling the submission of a form
-  function showModal() {
+  function showModal(e) {
+    e.preventDefault(); // Prevents the page from reloading when the button is clicked
     toggleModal();
-    actions();
+    actions(); // Calls the actions passed as props
   }
 
   // The hideModal function closes the modal
