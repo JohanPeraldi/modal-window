@@ -18,7 +18,7 @@ export default function Modal({ btnOpenText, btnCloseText, modalText, actions })
 
   return (
     <>
-      <button data-open-modal onClick={showModal}>
+      <button data-open-modal className='open' onClick={showModal}>
         {btnOpenText}
       </button>
       <dialog data-modal>
