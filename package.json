@@ -1,5 +1,5 @@
 {
-  "name": "modal-window",
+  "name": "@johanpm/modal-window",
   "main": "dist/index.js",
   "module": "dist/Modal.js",
   "version": "0.1.0",
@@ -47,5 +47,20 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohanPeraldi/modal-window.git"
+  },
+  "keywords": [
+    "modal",
+    "window"
+  ],
+  "author": "Johan Peraldi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohanPeraldi/modal-window/issues"
+  },
+  "homepage": "https://github.com/JohanPeraldi/modal-window#readme"
 }
