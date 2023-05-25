@@ -2,8 +2,7 @@
   "name": "@johanpm/modal-window",
   "main": "dist/index.js",
   "module": "dist/Modal.js",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
