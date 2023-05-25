@@ -2,23 +2,24 @@ import React from 'react';
 import toggleModal from './modalUtils';
 import './Modal.css';
 
-export default function Modal({ btnOpenText, btnCloseText, modalText, actions }) {
+export default function Modal({ type, btnOpenText, btnCloseText, modalText, actions }) {
   // The showModal function opens the modal and performs the actions
   // passed as props, such as handling the submission of a form
   function showModal(e) {
-    e.preventDefault(); // Prevents the page from reloading when the button is clicked
+    e.preventDefault();
     toggleModal();
-    actions(); // Calls the actions passed as props
+    actions(e); // Calls the actions passed as props
   }
 
   // The hideModal function closes the modal
-  function hideModal() {
+  function hideModal(e) {
+    e.preventDefault();
     toggleModal();
   }
 
   return (
     <>
-      <button data-open-modal className='open' onClick={showModal}>
+      <button type={type} data-open-modal className='open' onClick={showModal}>
         {btnOpenText}
       </button>
       <dialog data-modal>

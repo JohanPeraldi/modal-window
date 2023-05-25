@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Modal from './Modal';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const type = 'submit';
 const modalText = 'Testing the modal window!';
 const btnOpenText = 'Open';
 const btnCloseText = 'X';
@@ -14,6 +15,7 @@ function logMessage(message) {
 root.render(
   <React.StrictMode>
     <Modal
+      type={type}
       modalText={modalText}
       btnOpenText={btnOpenText}
       btnCloseText={btnCloseText}
