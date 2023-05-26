@@ -3,12 +3,13 @@ import toggleModal from './modalUtils';
 import './Modal.css';
 
 export default function Modal({ type, btnOpenText, btnCloseText, modalText, actions }) {
-  // The showModal function opens the modal and performs the actions
-  // passed as props, such as handling the submission of a form
+  // The showModal function opens the modal (after making the optional checks
+  // such as verifying a form validity) and performs the actions passed as props,
+  // such as handling the submission of a form
   function showModal(e) {
-    e.preventDefault();
     toggleModal();
-    actions(e); // Calls the actions passed as props
+    actions();
+    e.preventDefault();
   }
 
   // The hideModal function closes the modal
